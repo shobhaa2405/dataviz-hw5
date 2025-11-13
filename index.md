@@ -34,7 +34,7 @@ The x-axis uses nominal encoding (License_Type:N) with angled labels to accommod
 
 The Python analysis involved multiple transformation steps to create this visualization effectively. First, I filtered the dataset to remove any rows with null values in either the License_Type or License_Status columns, ensuring complete data for the analysis. I then identified the top 10 most common license types using `value_counts().head(10)` and filtered the entire dataset to include only licenses of these types, reducing the dataset from all license types to a focused subset of approximately 42,000 records. This filtering was necessary because visualizing all 150+ license types would create an incomprehensible chart, while the top 10 captures the most significant business categories. The data was left in its granular form (one row per license) rather than pre-aggregating, allowing Altair to perform the aggregation dynamically and maintain interactivity. I verified that the License_Status column contained meaningful categorical values and confirmed there were at least 2-3 status types per license category to ensure the stacked visualization would reveal interesting patterns. The transformation from individual license records to stacked bar segments happens through Altair's `count()` aggregation, which groups by both license type and status simultaneously.
 
-<iframe src="chart2_normalized.html" width="100%" height="650" frameborder="0"></iframe>
+<iframe src="chart2.html" width="100%" height="650" frameborder="0"></iframe>
 
 ---
 
