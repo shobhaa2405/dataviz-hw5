@@ -69,7 +69,7 @@ I chose hover instead of clicks or dropdowns because it requires minimal effort 
 
 ---
 
-<iframe src="chart2_stacked.html" width="100%" height="600" frameborder="0"></iframe>
+<iframe src="chart2.html" width="100%" height="600" frameborder="0"></iframe>
 
 ---
 
