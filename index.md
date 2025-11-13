@@ -22,6 +22,10 @@ I started with 10,000 license records and used Pandas' `value_counts()` to count
 
 ---
 
+<iframe src="chart1.html" width="100%" height="600" frameborder="0"></iframe>
+
+---
+
 ## Visualization 2: License Status Distribution by Type
 
 This stacked bar chart displays how different license statuses are distributed across the top 10 license types. The visualization shows 13 status categories, with NOT RENEWED being the most common (6,331 licenses) and ACTIVE second (2,440). DETECTIVE BOARD and COSMO clearly show the highest volumes, and most types have large NOT RENEWED segments, suggesting many of these are historical licenses rather than currently active businesses.
@@ -37,6 +41,10 @@ The opacity changes with hover: `opacity=alt.condition(hover, alt.value(1.0), al
 **Data Transformations:**
 
 I started with my 10,000-record dataset and filtered it to only the top 10 license types using `df_clean[license_col].isin(top_10_types)`, which gave me about 9,916 records (99% of the data). I kept the data at the individual license level rather than pre-aggregating it because Altair needs the granular data to create the stacked bars correctly—it automatically groups by both License Type and Status, counts the combinations, and stacks them. This approach also ensures the interactivity works properly.
+
+---
+
+<iframe src="chart2.html" width="100%" height="600" frameborder="0"></iframe>
 
 ---
 
@@ -65,18 +73,8 @@ I chose hover instead of clicks or dropdowns because it requires minimal effort 
 
 ---
 
-<iframe src="chart1.html" width="100%" height="600" frameborder="0"></iframe>
-
----
-
-<iframe src="chart2.html" width="100%" height="600" frameborder="0"></iframe>
-
----
-
 ## About This Project
 
 Created for IS 445 - Data Visualization using Python, Pandas, and Altair. The visualizations render client-side using Vega-Lite and are hosted on GitHub Pages.
 
 ---
-
-*Shobha Bhat | November 2025 | IS 445 Data Visualization | UIUC*
