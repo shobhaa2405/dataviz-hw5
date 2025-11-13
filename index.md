@@ -1,6 +1,6 @@
 # Chicago Business License Data Visualizations
 
-**Author:** Shobhaa Bhat  
+**Author:** Shobha Bhat  
 **Course:** IS 445 - Data Visualization  
 **Dataset:** Chicago Business Licenses (Fall 2022)
 
